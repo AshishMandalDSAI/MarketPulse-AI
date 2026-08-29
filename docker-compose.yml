@@ -1,0 +1,32 @@
+version: "3.9"
+
+services:
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: marketpulse-dashboard
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env.example
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+    restart: unless-stopped
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    container_name: marketpulse-api
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env.example
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+    depends_on:
+      - dashboard
+    restart: unless-stopped

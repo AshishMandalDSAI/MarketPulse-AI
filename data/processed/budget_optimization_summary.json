@@ -1,0 +1,30 @@
+{
+  "success": true,
+  "message": "Optimization terminated successfully",
+  "total_budget": 2224461.85,
+  "current_allocation": {
+    "TV": 516742.82875,
+    "Radio": 184020.71,
+    "Print": 131240.2075,
+    "Search": 516115.1425,
+    "Social_Media": 356801.9525,
+    "Display_Ads": 264578.73875,
+    "Email_Marketing": 48313.065,
+    "Influencer_Marketing": 206649.20500000002
+  },
+  "optimized_allocation": {
+    "TV": 111223.09250000001,
+    "Radio": 111223.09250000001,
+    "Print": 111223.09250000001,
+    "Search": 111223.09250000001,
+    "Social_Media": 111223.09250000001,
+    "Display_Ads": 1223454.0175,
+    "Email_Marketing": 333669.27750000043,
+    "Influencer_Marketing": 111223.09250000001
+  },
+  "current_predicted_revenue": 5253939.384012338,
+  "optimized_predicted_revenue": 6395501.93514839,
+  "expected_improvement_pct": 21.727744987119774,
+  "current_efficiency": 2.3618923309529167,
+  "optimized_efficiency": 2.8750782734927056
+}

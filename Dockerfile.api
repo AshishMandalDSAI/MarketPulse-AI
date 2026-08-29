@@ -1,0 +1,29 @@
+# MarketPulse AI - Dockerfile.api (FastAPI backend service)
+FROM python:3.11-slim
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+# Ensure the model/data pipeline has run so the API has something to serve
+RUN python src/data/generate_dataset.py \
+ && python src/data/data_cleaning.py \
+ && python src/features/feature_engineering.py \
+ && python src/analytics/marketing_analytics.py \
+ && python src/models/marketing_mix_model.py \
+ && python src/models/model_evaluation.py \
+ && python src/models/channel_contribution.py \
+ && python src/optimization/budget_optimizer.py \
+ && python src/optimization/simulator.py \
+ && python src/forecasting/forecast.py
+
+EXPOSE 8000
+
+ENTRYPOINT ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8000"]

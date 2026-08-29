@@ -1,0 +1,46 @@
+Column,Dtype,Description
+Date,datetime64[us],Week start date (Monday)
+TV_Spend,float64,Weekly spend on TV (INR)
+Radio_Spend,float64,Weekly spend on Radio (INR)
+Print_Spend,float64,Weekly spend on Print (INR)
+Search_Spend,float64,Weekly spend on Search (INR)
+Social_Media_Spend,float64,Weekly spend on Social Media (INR)
+Display_Ads_Spend,float64,Weekly spend on Display Ads (INR)
+Email_Marketing_Spend,float64,Weekly spend on Email Marketing (INR)
+Influencer_Marketing_Spend,float64,Weekly spend on Influencer Marketing (INR)
+Promotion_Spend,float64,Weekly promotional/discount spend (INR)
+Average_Price,float64,Average selling price for the week (INR)
+Website_Traffic,float64,Estimated weekly website sessions
+New_Customers,float64,New customers acquired in the week
+Returning_Customers,float64,Returning customers in the week
+Orders,float64,Total weekly orders
+Holiday,int64,"1 if the week overlaps a holiday/sale period, else 0"
+Season,str,Calendar season label
+Competitor_Index,float64,Synthetic index of competitor pricing/activity intensity
+Economic_Index,float64,Synthetic macroeconomic conditions index
+Revenue,float64,"Total weekly revenue (INR), the target variable for MMM"
+Year,int32,Derived analytical feature
+Month,int32,Derived analytical feature
+Week,int64,Derived analytical feature
+Quarter,int32,Derived analytical feature
+WeekOfYear,int64,Derived analytical feature
+Total_Marketing_Spend,float64,Sum of all 8 channel spends (INR)
+Digital_Spend,float64,"Sum of Search, Social, Display, Email, Influencer spend"
+Traditional_Spend,float64,"Sum of TV, Radio, Print spend"
+Digital_Spend_Share,float64,Derived analytical feature
+Traditional_Spend_Share,float64,Derived analytical feature
+TV_Spend_Share,float64,TV spend as a share of total marketing spend
+Radio_Spend_Share,float64,Radio spend as a share of total marketing spend
+Print_Spend_Share,float64,Print spend as a share of total marketing spend
+Search_Spend_Share,float64,Search spend as a share of total marketing spend
+Social_Media_Spend_Share,float64,Social Media spend as a share of total marketing spend
+Display_Ads_Spend_Share,float64,Display Ads spend as a share of total marketing spend
+Email_Marketing_Spend_Share,float64,Email Marketing spend as a share of total marketing spend
+Influencer_Marketing_Spend_Share,float64,Influencer Marketing spend as a share of total marketing spend
+Revenue_Growth_WoW,float64,Derived analytical feature
+Marketing_Growth_WoW,float64,Derived analytical feature
+Customer_Growth_WoW,float64,Derived analytical feature
+Total_Customers,float64,Derived analytical feature
+AOV,float64,Average Order Value = Revenue / Orders
+New_Customer_Share,float64,Derived analytical feature
+Naive_ROAS,float64,"Revenue / Total Marketing Spend (undecomposed, observational)"
