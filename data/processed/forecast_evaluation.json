@@ -1,0 +1,54 @@
+{
+  "method": "rolling-origin (walk-forward) backtest",
+  "horizon_weeks": 12,
+  "Ridge trend + seasonal (published model)": {
+    "metrics": {
+      "MAE": 242744.54712679563,
+      "RMSE": 284371.5859060107,
+      "MAPE": 4.337511840493167,
+      "sMAPE": 4.285499854184128,
+      "WAPE": 4.244877156185084,
+      "R2": 0.5105702513490675,
+      "n": 48,
+      "n_zero_actuals_excluded_from_MAPE": 0
+    },
+    "folds": 4,
+    "oos_error_std": 283064.055273305
+  },
+  "Naive (last value)": {
+    "metrics": {
+      "MAE": 363184.64208333316,
+      "RMSE": 434259.67978998215,
+      "MAPE": 6.495481969341377,
+      "sMAPE": 6.327063592447817,
+      "WAPE": 6.351014714458307,
+      "R2": -0.1413451003901558,
+      "n": 48,
+      "n_zero_actuals_excluded_from_MAPE": 0
+    },
+    "folds": 4,
+    "oos_error_std": 420990.71847769653
+  },
+  "Seasonal naive (same week last year)": {
+    "metrics": {
+      "MAE": 425843.14875,
+      "RMSE": 556057.7855431484,
+      "MAPE": 7.314978500751317,
+      "sMAPE": 7.801781615978571,
+      "WAPE": 7.446724862176161,
+      "R2": -0.8713620364051693,
+      "n": 48,
+      "n_zero_actuals_excluded_from_MAPE": 0
+    },
+    "folds": 4,
+    "oos_error_std": 377352.28597488644
+  },
+  "baseline": "Naive (last value)",
+  "improvement_vs_baseline_pct": 33.16,
+  "data_range": [
+    "2022-01-03",
+    "2025-12-22"
+  ],
+  "in_sample_residual_std": 336224.72762439604,
+  "interval_note": "The published 90% interval uses the in-sample residual std (336,225). Out-of-sample walk-forward errors have std 283,064; the interval width is consistent with out-of-sample error."
+}

@@ -1,0 +1,28 @@
+# Overlay: put Caddy (HTTPS) in front of both services and stop publishing
+# the app ports directly. Usage:
+#   docker compose -f docker-compose.yml -f deploy/docker-compose.proxy.yml up -d
+services:
+  dashboard:
+    ports: !reset []
+  api:
+    ports: !reset []
+    environment:
+      # Safe ONLY because the API port is no longer published (see `ports: !reset []`):
+      # the proxy is the only client that can reach uvicorn, so its X-Forwarded-For is trusted.
+      FORWARDED_ALLOW_IPS: "*"
+  proxy:
+    image: caddy:2
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - dashboard
+      - api
+volumes:
+  caddy_data:
+  caddy_config:

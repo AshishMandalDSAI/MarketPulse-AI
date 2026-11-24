@@ -1,0 +1,32 @@
+# MarketPulse AI - Dockerfile.api (FastAPI backend service)
+FROM python:3.13-slim
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Unprivileged runtime user. The entrypoint starts as root only to prepare the
+# data/model volumes, then drops to this user (or to the owner of a host bind
+# mount) before any application code runs.
+RUN groupadd --system --gid 10001 app \
+    && useradd --system --uid 10001 --gid 10001 --home-dir /home/app --create-home --shell /usr/sbin/nologin app
+
+COPY . .
+
+# Demo data/model pipeline runs at container startup (not build time) via
+# the entrypoint script, so bind-mounted host volumes work correctly.
+# See docker-entrypoint.sh for details.
+
+EXPOSE 8000
+
+HEALTHCHECK CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')" || exit 1
+
+ENTRYPOINT ["./docker-entrypoint.sh"]
+# Exactly one worker: the upload registry and the rate limiter are per-process.
+# --proxy-headers lets a TLS reverse proxy pass the real client IP (see deploy/).
+CMD ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "1", "--proxy-headers"]

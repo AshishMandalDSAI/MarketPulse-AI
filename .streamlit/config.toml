@@ -1,0 +1,17 @@
+# MarketPulse AI — Streamlit configuration (design tokens mirror dashboard/styles/theme.py)
+[theme]
+base = "dark"
+primaryColor = "#3B82F6"            # brand blue (actions, active states)
+backgroundColor = "#0B1220"         # app canvas (deep navy)
+secondaryBackgroundColor = "#131C2E" # inputs, widgets, sidebar surfaces
+textColor = "#E6EAF2"
+font = "sans serif"
+
+[client]
+toolbarMode = "minimal"             # hide developer-only menu items (e.g. Deploy)
+
+[browser]
+gatherUsageStats = false
+
+[server]
+maxUploadSize = 200                 # MB; Streamlit's default, stated explicitly

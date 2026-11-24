@@ -1,0 +1,39 @@
+# MarketPulse AI — HTTPS reverse proxy (Caddy 2)
+#
+# Caddy obtains and renews Let's Encrypt certificates automatically for the
+# domains below (ports 80 and 443 must reach this host and DNS must point here).
+# Replace the example domains, then: docker compose -f docker-compose.yml -f deploy/docker-compose.proxy.yml up -d
+
+{
+	email ops@example.com            # certificate expiry notices
+}
+
+(security_headers) {
+	header {
+		Strict-Transport-Security "max-age=31536000; includeSubDomains"
+		X-Content-Type-Options "nosniff"
+		X-Frame-Options "DENY"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		-Server
+	}
+}
+
+# Dashboard (Streamlit uses WebSockets; Caddy proxies them transparently)
+dashboard.example.com {
+	import security_headers
+	request_body {
+		max_size 200MB                   # matches Streamlit maxUploadSize
+	}
+	reverse_proxy dashboard:8501
+}
+
+# API
+api.example.com {
+	import security_headers
+	request_body {
+		max_size 50MB                    # matches MARKETPULSE_MAX_UPLOAD_MB
+	}
+	# Caddy sets X-Forwarded-For / X-Forwarded-Proto; uvicorn runs with
+	# --proxy-headers and trusts them only from FORWARDED_ALLOW_IPS.
+	reverse_proxy api:8000
+}

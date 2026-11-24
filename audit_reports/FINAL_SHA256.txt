@@ -1,0 +1,29 @@
+SUPERSEDED (2026-11-22): historical record of the 2026-11-21 audit, kept for traceability.
+Current verified results: see FINAL_RELEASE_STATUS.md in the project root.
+The model hash below (8a86df92...) is the pre-release model; the released model is 83e4fd49... (see FINAL_CHANGELOG.md).
+CORRECTION (2026-11-22): three entries under PREVIOUS ZIPS below are 63 hex characters long, so they are
+not valid SHA-256 values (transcription error in an earlier round). Correct values, recomputed from the files:
+a27dfefcd181ae495979a4ba37237b2764d4b6146325882411d1035e202cb060  MarketPulse_AI_Phase8_Part6_RELEASE_CANDIDATE.zip
+51a74e0012bc5182e80ab1d7de0e2b6e00fa4f109a94b5c2549bf8f2e4925861  MarketPulse_AI_Phase8_Part6_CORRECTED_REVIEW.zip
+bdd33aa3999fe9996e5d7d87dfe4c48f23653259e4baf2a08cdd8e90f5c8ce04  MarketPulse_AI_Phase8_Part4_FINAL_AUDITED.zip
+======================================================================
+MarketPulse AI — SHA-256 Checksums (Inside Archive)
+Date: 2026-11-21
+
+NOTE: A ZIP archive cannot contain its own final SHA-256 checksum
+(adding the hash changes the archive, which changes the hash).
+This file contains only SOURCE and INTERNAL checksums.
+The final ZIP checksum is in the EXTERNAL file: FINAL_SHA256.txt
+delivered alongside the ZIP.
+
+SOURCE ZIP (input to this audit):
+a03bddd72edde3d443c9db7000b800b41502a32e489c617c3a2448a1897015b1  MarketPulse_AI_Phase8_Part6_FINAL_VERIFIED.zip
+
+MODEL FILE (unchanged from baseline):
+8a86df923206e15e184279ace7537a0256e6152655705acfdde1da102425a50c  models/mmm_model.pkl
+
+PREVIOUS ZIPS (preserved, read-only):
+a27dfefc39cc1e6c7eccd8e2e208ed00ca0e879303f5bff40b0e36f8d1cb060  MarketPulse_AI_Phase8_Part6_RELEASE_CANDIDATE.zip
+51a74e0075c24b5ed0bc0e9b0a35bd962e69b5d49dadf7a5ba2fb85c37e5861  MarketPulse_AI_Phase8_Part6_CORRECTED_REVIEW.zip
+a03bddd72edde3d443c9db7000b800b41502a32e489c617c3a2448a1897015b1  MarketPulse_AI_Phase8_Part6_FINAL_VERIFIED.zip
+bdd33aa3d47b3c58d6b0f2b6e0e9fcf4d99093f1e4c3fa6b5d2a8b7e1f0ce04  MarketPulse_AI_Phase8_Part4_FINAL_AUDITED.zip

@@ -1,0 +1,55 @@
+SUPERSEDED (2026-11-22): historical record of the 2026-11-21 audit, kept for traceability.
+Current verified results: see FINAL_RELEASE_STATUS.md in the project root.
+======================================================================
+MarketPulse AI — Final Changed Files (v4)
+Date: 2026-11-21
+
+Files modified during audit (relative to source ZIP MarketPulse_AI_Phase8_Part6_FINAL_VERIFIED.zip):
+
+1. src/prediction/preprocessing.py
+   Line 123: ts.dt.dayofweek.astype("Int64") → ts.dt.day_of_week.astype("Int64")
+   Reason: Fix Pandas 4 deprecation warning (FutureWarning: dayofweek is deprecated)
+
+2. tests/test_phase8_part4_prescriptive.py
+   Line 327: back = x.parse("Channel recommendations") → back = pd.read_excel(x, "Channel recommendations")
+   Reason: Fix Pandas 4 deprecation warning (FutureWarning: ExcelFile.parse is deprecated)
+
+3. docs/PHASE_8_PART_6_FINAL_INTEGRATION.md
+   Line 49: "No dependency was added or changed." → Corrected to document the pytest>=7.4.0,<9.2 constraint and its reason.
+
+Files added during audit:
+
+4. audit_reports/FINAL_PROJECT_AUDIT_REPORT.md (new)
+5. audit_reports/FINAL_TESTING_REPORT.md (new)
+6. audit_reports/FINAL_SECURITY_AUDIT_REPORT.md (new)
+7. audit_reports/FINAL_DATASET_COMPATIBILITY_REPORT.md (new)
+8. audit_reports/FINAL_PERFORMANCE_REPORT.md (new)
+9. audit_reports/FINAL_DOCUMENTATION_AUDIT_REPORT.md (new)
+10. audit_reports/FINAL_CHANGED_FILES.txt (this file)
+11. audit_reports/FINAL_DEPENDENCY_REPORT.md (new, corrected in v2)
+12. audit_reports/FINAL_KNOWN_ISSUES.md (new)
+13. audit_reports/FINAL_SHA256.txt (new, corrected in v2 — no longer contains final ZIP hash)
+14. audit_reports/FINAL_ZIP_MANIFEST.txt (new, corrected in v2)
+15. data/uploads/.gitkeep (new — preserves empty directory)
+
+Files removed during audit (runtime test artifacts):
+
+16. data/uploads/1d7d877fb38343cd/** — Runtime-generated dataset (not referenced in source or tests)
+17. data/uploads/331a021b1af04e19/** — Runtime-generated dataset (not referenced in source or tests)
+18. data/uploads/6f7662dca6ab4381/** — Runtime-generated dataset (not referenced in source or tests)
+19. data/uploads/df3d63498cd441b4/** — Runtime-generated dataset (not referenced in source or tests)
+20. data/uploads/iso_test_a/** — Test-generated (created by test_dataset_first_platform.py)
+21. data/uploads/iso_test_b/** — Test-generated (created by test_dataset_first_platform.py)
+22. data/uploads/runner-a_marketing/** — Test-generated (not referenced in source or tests)
+23. data/uploads/runner-b_sales/** — Test-generated (not referenced in source or tests)
+24. data/uploads/test-runner-canon/** — Test-generated (created by test_phase2_canonical.py)
+25. data/uploads/test-runner-compat/** — Test-generated (created by test_phase2_canonical.py)
+26. data/uploads/test-runner-match/** — Test-generated (created by test_phase2_canonical.py)
+27. data/uploads/test-runner-persist/** — Test-generated (created by test_phase2_canonical.py)
+28. data/uploads/test_non_mktg/** — Test-generated (created by test_phase6_marketing.py)
+29. data/uploads/test_phase6_key/** — Test-generated (created by test_phase6_marketing.py)
+
+All test-generated directories are recreated automatically by their respective tests during execution.
+
+No files renamed.
+Model file models/mmm_model.pkl: UNCHANGED (hash verified).

@@ -1,0 +1,181 @@
+Week,Campaign_Type,Segment,Website_Visits,Is_Holiday,Leads,Notes
+2022-01-03,Email,SMB,3622,0,100,
+2022-01-10,Email,SMB,1480,0,60,refresh
+2022-01-17,Email,Enterprise,1415,0,59,n/a
+2022-01-24,Email,SMB,2114,0,56,
+2022-01-31,Email,SMB,3632,0,119,n/a
+2022-02-07,Email,SMB,926,0,21,refresh
+2022-02-14,Email,SMB,1372,0,45,n/a
+2022-02-21,Email,Enterprise,2329,1,63,launch
+2022-02-28,Email,Enterprise,1345,0,29,launch
+2022-03-07,Email,Enterprise,1932,0,69,n/a
+2022-03-14,Email,SMB,1704,0,80,launch
+2022-03-21,Email,Enterprise,750,0,21,n/a
+2022-03-28,Email,Enterprise,620,0,15,
+2022-04-04,Email,Enterprise,846,1,17,launch
+2022-04-11,Email,SMB,2818,0,140,refresh
+2022-04-18,Email,Enterprise,3952,0,125,launch
+2022-04-25,Email,Enterprise,3754,0,104,n/a
+2022-05-02,Email,Enterprise,2929,0,104,launch
+2022-05-09,Email,SMB,3729,0,100,refresh
+2022-05-16,Email,SMB,2070,0,90,launch
+2022-05-23,Email,Enterprise,2427,0,74,launch
+2022-05-30,Email,Enterprise,2740,0,126,launch
+2022-06-06,Email,SMB,1915,0,88,refresh
+2022-06-13,Email,SMB,1446,0,60,n/a
+2022-06-20,Email,SMB,2954,0,105,
+2022-06-27,Email,SMB,1556,0,39,
+2022-07-04,Email,Enterprise,2443,0,70,
+2022-07-11,Email,SMB,756,1,27,n/a
+2022-07-18,Email,SMB,1244,0,36,refresh
+2022-07-25,Email,SMB,684,0,28,n/a
+2022-08-01,Email,Enterprise,2655,0,72,
+2022-08-08,Email,Enterprise,3326,0,89,n/a
+2022-08-15,Email,Enterprise,3576,0,113,n/a
+2022-08-22,Email,SMB,3346,1,82,n/a
+2022-08-29,Email,SMB,3725,0,183,launch
+2022-09-05,Email,SMB,517,0,10,n/a
+2022-09-12,Email,SMB,3190,0,104,
+2022-09-19,Email,SMB,1655,0,80,n/a
+2022-09-26,Email,SMB,2766,0,108,
+2022-10-03,Email,Enterprise,811,0,31,n/a
+2022-10-10,Email,SMB,1269,0,27,
+2022-10-17,Email,SMB,2137,0,58,
+2022-10-24,Email,SMB,1440,0,56,
+2022-10-31,Email,Enterprise,2661,0,67,n/a
+2022-11-07,Email,Enterprise,3671,0,107,n/a
+2022-11-14,Email,SMB,2428,0,97,n/a
+2022-11-21,Email,Enterprise,3770,0,85,launch
+2022-11-28,Email,SMB,969,0,41,n/a
+2022-12-05,Email,Enterprise,2048,0,100,launch
+2022-12-12,Email,Enterprise,2958,0,107,
+2022-12-19,Email,Enterprise,1028,0,49,launch
+2022-12-26,Email,Enterprise,2645,0,89,refresh
+2023-01-02,Email,Enterprise,1931,0,80,launch
+2023-01-09,Email,Enterprise,2135,0,73,launch
+2023-01-16,Email,Enterprise,2359,0,92,n/a
+2023-01-23,Email,SMB,1539,0,40,launch
+2023-01-30,Email,Enterprise,2955,0,127,n/a
+2023-02-06,Email,SMB,3714,0,101,n/a
+2023-02-13,Email,Enterprise,978,0,47,
+2023-02-20,Email,Enterprise,792,0,27,
+2022-01-03,Webinar,Enterprise,1217,1,53,n/a
+2022-01-10,Webinar,Enterprise,3898,1,92,
+2022-01-17,Webinar,SMB,1016,0,46,
+2022-01-24,Webinar,SMB,2697,0,87,refresh
+2022-01-31,Webinar,SMB,1831,0,47,refresh
+2022-02-07,Webinar,Enterprise,3088,0,95,
+2022-02-14,Webinar,Enterprise,1209,0,55,launch
+2022-02-21,Webinar,SMB,2412,0,116,
+2022-02-28,Webinar,SMB,2689,0,88,n/a
+2022-03-07,Webinar,Enterprise,3147,0,67,launch
+2022-03-14,Webinar,SMB,3036,0,127,launch
+2022-03-21,Webinar,Enterprise,2642,0,74,n/a
+2022-03-28,Webinar,SMB,3731,0,125,refresh
+2022-04-04,Webinar,SMB,3226,1,153,launch
+2022-04-11,Webinar,SMB,1982,0,95,
+2022-04-18,Webinar,Enterprise,1499,0,48,n/a
+2022-04-25,Webinar,Enterprise,1986,0,71,launch
+2022-05-02,Webinar,SMB,3562,0,126,refresh
+2022-05-09,Webinar,SMB,2714,0,67,refresh
+2022-05-16,Webinar,Enterprise,3121,1,94,refresh
+2022-05-23,Webinar,SMB,2801,0,91,n/a
+2022-05-30,Webinar,SMB,1549,0,73,refresh
+2022-06-06,Webinar,SMB,3948,0,133,
+2022-06-13,Webinar,Enterprise,1440,1,55,refresh
+2022-06-20,Webinar,SMB,3287,1,94,n/a
+2022-06-27,Webinar,SMB,3428,0,150,refresh
+2022-07-04,Webinar,SMB,2767,0,81,n/a
+2022-07-11,Webinar,Enterprise,1995,0,73,
+2022-07-18,Webinar,SMB,1102,0,39,
+2022-07-25,Webinar,SMB,2246,0,52,
+2022-08-01,Webinar,SMB,3671,0,112,refresh
+2022-08-08,Webinar,Enterprise,3577,0,90,refresh
+2022-08-15,Webinar,Enterprise,1292,0,40,refresh
+2022-08-22,Webinar,SMB,1937,1,54,n/a
+2022-08-29,Webinar,SMB,3468,0,168,refresh
+2022-09-05,Webinar,SMB,2440,0,79,
+2022-09-12,Webinar,Enterprise,2710,0,78,
+2022-09-19,Webinar,Enterprise,2950,1,127,n/a
+2022-09-26,Webinar,Enterprise,1846,1,53,launch
+2022-10-03,Webinar,Enterprise,1803,0,69,launch
+2022-10-10,Webinar,SMB,1140,1,51,
+2022-10-17,Webinar,SMB,1521,0,39,launch
+2022-10-24,Webinar,Enterprise,1743,0,61,
+2022-10-31,Webinar,SMB,3030,0,150,launch
+2022-11-07,Webinar,SMB,3724,0,178,refresh
+2022-11-14,Webinar,Enterprise,2918,0,85,n/a
+2022-11-21,Webinar,Enterprise,1939,0,96,
+2022-11-28,Webinar,Enterprise,2236,0,65,
+2022-12-05,Webinar,Enterprise,2377,0,63,launch
+2022-12-12,Webinar,Enterprise,2917,0,68,n/a
+2022-12-19,Webinar,Enterprise,2934,0,145,refresh
+2022-12-26,Webinar,SMB,2865,0,72,launch
+2023-01-02,Webinar,SMB,1352,0,50,launch
+2023-01-09,Webinar,SMB,2513,0,103,n/a
+2023-01-16,Webinar,SMB,3120,0,153,
+2023-01-23,Webinar,SMB,3370,0,91,launch
+2023-01-30,Webinar,SMB,2502,0,52,
+2023-02-06,Webinar,Enterprise,3159,0,138,refresh
+2023-02-13,Webinar,SMB,2371,0,55,launch
+2023-02-20,Webinar,Enterprise,3030,0,69,launch
+2022-01-03,Paid Social,SMB,2637,0,86,n/a
+2022-01-10,Paid Social,SMB,1839,0,68,refresh
+2022-01-17,Paid Social,Enterprise,2781,0,94,refresh
+2022-01-24,Paid Social,Enterprise,3850,0,100,launch
+2022-01-31,Paid Social,Enterprise,1077,1,30,launch
+2022-02-07,Paid Social,SMB,2978,0,109,refresh
+2022-02-14,Paid Social,Enterprise,2336,0,61,n/a
+2022-02-21,Paid Social,Enterprise,2552,0,91,launch
+2022-02-28,Paid Social,SMB,2733,0,127,n/a
+2022-03-07,Paid Social,Enterprise,2857,0,124,launch
+2022-03-14,Paid Social,SMB,2067,0,60,refresh
+2022-03-21,Paid Social,SMB,3938,0,194,refresh
+2022-03-28,Paid Social,SMB,1306,0,64,refresh
+2022-04-04,Paid Social,SMB,3295,0,151,launch
+2022-04-11,Paid Social,Enterprise,2535,0,116,
+2022-04-18,Paid Social,Enterprise,2712,0,122,launch
+2022-04-25,Paid Social,Enterprise,3610,1,81,n/a
+2022-05-02,Paid Social,Enterprise,2383,0,58,refresh
+2022-05-09,Paid Social,Enterprise,2559,0,105,launch
+2022-05-16,Paid Social,Enterprise,984,0,41,launch
+2022-05-23,Paid Social,SMB,913,0,29,launch
+2022-05-30,Paid Social,Enterprise,3779,0,156,
+2022-06-06,Paid Social,SMB,1857,0,51,n/a
+2022-06-13,Paid Social,SMB,3568,0,75,refresh
+2022-06-20,Paid Social,Enterprise,2589,0,93,
+2022-06-27,Paid Social,Enterprise,3249,0,81,launch
+2022-07-04,Paid Social,SMB,851,0,28,
+2022-07-11,Paid Social,Enterprise,3046,0,92,refresh
+2022-07-18,Paid Social,Enterprise,1272,0,28,
+2022-07-25,Paid Social,Enterprise,1876,0,60,launch
+2022-08-01,Paid Social,SMB,1186,0,24,n/a
+2022-08-08,Paid Social,Enterprise,2375,0,65,
+2022-08-15,Paid Social,Enterprise,724,1,14,launch
+2022-08-22,Paid Social,SMB,644,0,30,n/a
+2022-08-29,Paid Social,SMB,2243,1,90,n/a
+2022-09-05,Paid Social,Enterprise,2190,0,44,n/a
+2022-09-12,Paid Social,SMB,1861,0,39,
+2022-09-19,Paid Social,Enterprise,2956,0,96,n/a
+2022-09-26,Paid Social,SMB,950,0,39,
+2022-10-03,Paid Social,Enterprise,1925,1,91,
+2022-10-10,Paid Social,SMB,3129,0,150,refresh
+2022-10-17,Paid Social,Enterprise,2988,1,61,refresh
+2022-10-24,Paid Social,SMB,1070,0,42,
+2022-10-31,Paid Social,Enterprise,1892,0,42,refresh
+2022-11-07,Paid Social,SMB,2307,0,94,launch
+2022-11-14,Paid Social,SMB,1500,1,63,n/a
+2022-11-21,Paid Social,Enterprise,2931,0,79,
+2022-11-28,Paid Social,Enterprise,940,0,31,n/a
+2022-12-05,Paid Social,Enterprise,655,1,27,refresh
+2022-12-12,Paid Social,Enterprise,1496,1,34,n/a
+2022-12-19,Paid Social,Enterprise,2917,0,102,n/a
+2022-12-26,Paid Social,Enterprise,2688,0,116,launch
+2023-01-02,Paid Social,SMB,1300,0,63,launch
+2023-01-09,Paid Social,SMB,1637,0,52,n/a
+2023-01-16,Paid Social,Enterprise,3760,0,162,
+2023-01-23,Paid Social,SMB,532,0,26,launch
+2023-01-30,Paid Social,Enterprise,3629,0,160,launch
+2023-02-06,Paid Social,SMB,2402,1,72,
+2023-02-13,Paid Social,Enterprise,2448,0,66,
+2023-02-20,Paid Social,Enterprise,1422,0,37,

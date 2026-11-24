@@ -1,0 +1,15 @@
+# Optional gradient-boosting classifiers for Statistics → Predictive Analysis (PART 03).
+# The app runs without them; each missing package makes only its own model "unavailable"
+# (shown with this install hint). No other algorithm is ever used in its place.
+#
+#   pip install -r requirements-optional.txt
+#
+# Versions verified on Linux x86-64 / Python 3.13 (see MODEL_VALIDATION_REPORT.md).
+# xgboost-cpu: the CPU-only XGBoost wheel (~6 MB, depends only on numpy/scipy; avoids the
+#   ~300 MB nvidia-nccl dependency of the full "xgboost" wheel). Linux/Windows wheels exist; on
+#   macOS use "xgboost" instead (xgboost-cpu has no macOS wheels).
+# lightgbm: needs the OpenMP runtime (libgomp1 on Debian/Ubuntu slim images; bundled on Windows/macOS wheels).
+# catboost: ~100 MB wheel; pulls in matplotlib, graphviz and plotly.
+xgboost-cpu==3.4.1
+lightgbm==4.7.0
+catboost==1.2.10

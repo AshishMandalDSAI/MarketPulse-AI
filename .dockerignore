@@ -1,0 +1,57 @@
+# Secrets — never bake into an image
+.env
+
+# Version control
+.git
+.gitignore
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# User-uploaded datasets and runtime state on the build host — never bake into an image
+data/uploads/*
+!data/uploads/.gitkeep
+data/.init.lock
+
+# Tests and fixtures (not needed at runtime)
+tests/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+logs/
+
+# Docs / packaging artifacts
+*.md
+LICENSE
+MarketPulse_AI_Final.zip
+
+# Docker files (avoid recursive copy)
+Dockerfile
+Dockerfile.api
+docker-compose.yml
+
+# Streamlit secrets — never bake into an image
+.streamlit/secrets.toml

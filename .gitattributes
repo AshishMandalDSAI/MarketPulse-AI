@@ -1,0 +1,6 @@
+# Keep shell scripts LF even when the repository is checked out on Windows with core.autocrlf=true:
+# a CRLF docker-entrypoint.sh makes the containers fail with "no such file or directory".
+*.sh text eol=lf
+Dockerfile* text eol=lf
+# PowerShell runs either line ending; keep them as committed.
+*.ps1 text

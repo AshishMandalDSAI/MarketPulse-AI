@@ -1,0 +1,33 @@
+{
+  "kpis": {
+    "total_revenue": 1061503836.0100001,
+    "total_marketing_spend": 354224801.38,
+    "avg_weekly_revenue": 5103383.826971155,
+    "avg_weekly_marketing_spend": 1703003.8527884616,
+    "revenue_growth_h1_to_h2": 0.17771616228266904,
+    "marketing_growth_h1_to_h2": 0.29017301776166193,
+    "total_orders": 787595.0,
+    "total_customers": 787595.0,
+    "avg_order_value": 1347.7787898729678,
+    "overall_naive_roas": 2.99669540888882,
+    "n_weeks": 208,
+    "date_range": {
+      "start": "2022-01-03",
+      "end": "2025-12-22"
+    }
+  },
+  "holiday_analysis": {
+    "holiday_weeks": 32,
+    "non_holiday_weeks": 176,
+    "avg_revenue_holiday": 5359060.193125,
+    "avg_revenue_non_holiday": 5056897.214943182,
+    "holiday_revenue_lift_pct": 5.975264383245202
+  },
+  "promotion_analysis": {
+    "high_promo_weeks": 59,
+    "low_promo_weeks": 149,
+    "avg_revenue_high_promo": 5230426.888305084,
+    "avg_revenue_low_promo": 5053078.1852349,
+    "promo_revenue_lift_pct": 3.5097161882117187
+  }
+}
